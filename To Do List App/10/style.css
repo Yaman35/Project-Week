@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.8rem;
+    font-family: "Yomogi",cursive;
+} 
+body{
+    background-color:cadetblue;
+}
+header{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    margin: 2%;
+}
+#heading{
+    
+    display: flex;
+    justify-content: space-around;
+    min-width: 100%;
+} 
+blockquote {
+    
+    margin: 2%;
+    background-color:darkolivegreen;
+    color: white;
+    padding: 2%;
+    border-radius: 25px;
+}
+main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    padding: 2%;
+}
+#section1{
+    
+    min-width: 33%;
+    display: flex;
+    justify-content: center;
+    
+}
+#section1--task{
+    border-radius: 25px;
+    border: none;
+    padding: 2%;
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+    outline: none;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#section1--button{
+    border-radius: 15px;
+    min-width: 25% ;
+    margin: 2%;
+    background-color: darkolivegreen;
+    color: white;
+    border: none;
+    font-size: larger;
+    padding: 1%;
+}
+#section2{
+    border: 5px dashed darkolivegreen;
+    height: 500px;
+    min-width: 50%;
+    text-align: center;
+    overflow:auto;
+    border-radius: 10px;
+}
+/* Buradan sonrası js ile oluşturulan class lara ait style */
+
+
+.tasks{
+    font-family: 'Merienda', cursive;
+    font-size:18px;
+    
+}
+.checked{
+    font-family: 'Merienda', cursive;
+    font-size:18px;
+    padding-left:1.2rem;
+    text-decoration: line-through solid deeppink;
+    text-decoration-thickness: 4px;
+    opacity: 0.6;
+}

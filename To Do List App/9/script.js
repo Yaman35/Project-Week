@@ -32,7 +32,7 @@ plus.addEventListener("click", function (event) {               // + butonuna he
     div.appendChild(li);                                        // li etiketi div e child olarak eklendi          
     div.appendChild(completedButton)                            // "✓" butonu div e child olarak eklendi 
     div.appendChild(trash)                                      // "🗑️" butonu div e child olarak eklendi 
-    ul.appendChild(div);                                        // En son olarak bu div ul ye child olrak eklenmiş oldu
+    ul.appendChild(div);                                        // En son olarak bu div ul ye child olarak eklenmiş oldu
     
     pending++;                                                  // Sonuçta da pending task sayısını 1 arttırdık
     span.innerText = pending;                                   // Ve onu da ilgili yere (span içeriği)yazdırdık
@@ -45,7 +45,7 @@ ul.addEventListener("click", function(e){                       // ul listesi ü
     const item = e.target;                                      // tıklama hedefini "item" değişkenine atadık
     if (item.className==="trash-btn"){                          // Eğer hedef çöp kutusu ise
         const todo = item.parentElement;                        // "todo" değişkenine çöp kutusunun parentını (yani oluşturulan div) atamış olduk
-        todo.classList.toggle("trushed");                       // "todo" değişkeninin classını "trushed" yaptık ( Öncesinde "trash-btn" idi), yani artık .trushed style uygulanacak                
+        todo.classList.toggle("trushed");                       // "todo" değişkeninin classına "trushed" classını da ekledik, yani artık .trushed style da uygulanacak                
         todo.addEventListener("transitionend",function(){       // "transitionend" eventı bir transition tammalandığında olacak olan olayı betimler
             todo.remove();                                      // transition işlemi tamamlandığında "todo" silinir ( yani item.parentElement)
         });
@@ -54,7 +54,7 @@ ul.addEventListener("click", function(e){                       // ul listesi ü
     };
     if (item.className==="completed-btn"){                      // tıklama hedefin "✓" butonu ise
         const todo = item.parentElement;                        // Bunun parent elemanını (yani oluşturulan div) "todo" değişkenine atadık
-        todo.classList.toggle("completed")                      // "todo" değişkeninin classını bu sefer "completed" yaptık ( Öncesinde "completed-btn" idi), yani artık .completed style uygulanacak                
+        todo.classList.toggle("completed")                      // "todo" değişkeninin classına "completed" classını da ekledik , yani artık .completed style da uygulanacak                
     };
 })
 
