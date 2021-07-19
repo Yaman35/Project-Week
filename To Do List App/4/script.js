@@ -1,23 +1,24 @@
-const clear = document.querySelector(".clear");
-const dateElement = document.getElementById("date");
-const list = document.getElementById("list");
-const input = document.getElementById("input");
+const clear = document.querySelector(".clear");     // Refresh butonunun olduğu div
+const dateElement = document.getElementById("date");// Tarihin içinde bulunduğu div
+const list = document.getElementById("list");       // Yeni oluşturulan li lerin içinde bulunduğu div
+const input = document.getElementById("input");     // Kullanıcının veri girişi yaptığı input
 
+// const vaariables
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle";
 const LINE_THROUGH = "lineThrough";
 
-let LIST = [], 
-id = 0;
+let LIST = [],                                      // LIST adında boş bir liste oluşturduk
+id = 0;                                             // ?????
 
-const options = { weekday: "long", month: "short", day: "numeric" };
-const today = new Date();
-dateElement.innerHTML = today.toLocaleDateString("en-US", options);
+const options = { weekday: "long", month: "short", day: "numeric" }; // Object Gösterim, changeable
+const today = new Date();                                            // today değişkenine yeni bir gün oşturup atadık
+dateElement.innerHTML = today.toLocaleDateString("en-US", options);  // Takiben HTML de tarih kısmının bulunduğu alanın içeriğine bu değişkeni toLocaleDateString methoduna uygun olacak şekilde yazdırdık
 
 function addToDo(toDo, id, done, trash) {
   if(trash){ return; }
 
-  let DONE = done ? CHECK : UNCHECK;
+  let DONE = done ? CHECK : UNCHECK;                        // ????????????????????????????????????????????
   let LINE = done ? LINE_THROUGH : "";
   const item = `<li class="item">
                   <i class="far ${DONE} co" job="complete" id="${id}"></i>
@@ -32,7 +33,7 @@ function addToDo(toDo, id, done, trash) {
 // addToDo("Drink Coffee");
 
 document.addEventListener("keyup", function (event){
-  if (event.keyCode == 13) {
+  if (event.keycode === 13) {
     const toDo = input.value;
     if(toDo){
       addToDo(toDo, id, false, false);
@@ -106,7 +107,7 @@ function add1() {
   input.value = "";
 }
 
-clear.addEventListener("click", function(){
+clear.addEventListener("click", function(){     // Refresh butonuna basıldığında tüm sayfa yeniler
   location.reload();
 });
 

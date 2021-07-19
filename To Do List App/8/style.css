@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color:lightgreen;
+    padding:3%;
+    text-align:center;
+    font-size:1.5rem;
+}
+section{
+    
+    
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+.todo{
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding:1.5rem;
+    background-color: lightblue;
+    margin-bottom: 2rem;
+    width: 40%;
+    border: 0;
+    margin-top: -2%;
+    margin-bottom:4%;
+    border-radius: 20px
+    
+    
+}
+
+#new_todo{
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+   
+   
+}
+
+#add_text{
+    width: 80%;
+    height: 2rem;
+    font-family: 'Merienda', cursive;
+    font-size:18px;
+    padding:1rem;
+    margin-top: 1rem;
+    border: 1px solid rgb(247, 242, 242);
+}
+.add_text{
+  
+    font-family: 'Merienda', cursive;
+    font-size:18px;
+    
+    
+
+    
+}
+#add_btn{
+    width: 15%;
+    background-color: greenyellow;
+    color: white;
+    padding:0.5rem;
+    font-size:16px;
+    margin-left: 1rem;
+    border-radius:5px;
+    font-family: 'Merienda', cursive;
+    border: 0;
+    cursor: pointer;
+
+
+}
+
+
+.checked{
+    font-family: 'Merienda', cursive;
+    font-size:18px;
+    padding-left:1.2rem;
+    text-decoration: line-through solid black;
+    text-decoration-thickness: 5px;
+    text-decoration-style:double;
+    opacity: 0.6;
+}
+
+#trash{
+    cursor:pointer;
+    color: black;
+    font-size:30px;
+    transition: 0.5s;
+}
+
+#trash:hover{
+    color:red;
+    transform: scale(1.1) rotate(360deg);
+}
+
+#div_list{
+    display:flex;
+    justify-content:space-between;
+    border-radius: 20px;
+
+}/*
+
+
+@media screen and (max-width:1200px) and (min-width: 768px) {
+
+   
+
+   #add_text{
+       width:70%;
+   }
+
+   #add_btn{
+       width: 15%;
+     
+       padding-right:2.5rem;
+       
+   }
+
+
+}
+*/

@@ -1,0 +1,82 @@
+*{
+    text-align: center;
+    margin: 0;
+    padding: 0;    transition: all 300ms;
+    font-family: 'Yomogi', cursive;
+    font-size: 33px;
+    color: white;
+}
+body{
+    background-color: rgba(102, 86, 86, 0.98);
+}
+h1{
+    
+    margin-bottom: 20px;
+    font-size: 60px;
+}
+button{
+    margin: auto;
+    border-radius: 10px;
+    padding: 2px 6px;
+    border: 5px solid blue;
+    color: black;
+    background-color: rgb(0, 177, 221);
+    
+}
+button:hover{
+    background-color: rgba(13, 13, 13, .98);
+    color: white;
+    border: 5px dotted rgba(197, 114, 198, 0.9);
+}
+ul{
+    list-style-type: none;
+}
+li{
+    border: 1px solid red;
+    width: 30%;
+    height: 58px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    margin-top: 17px;
+    color: black;
+    border: 5px solid black;
+    text-align: left;
+    padding: 8px 0px 7px 27px;
+    background-color: rgba(197, 114, 197, 0.9);
+}
+input{
+    border-radius: 10px;
+    color: black;
+    border-style: none;
+    width: 24%;
+    height: 43px;
+    border: 5px solid black;
+    background-color: rgba(82, 180, 204, 0.76);
+
+}
+
+input:focus, input:hover{
+    background-color: rgba(13, 13, 13, .98);
+    color: white;
+    border: 5px dotted rgba(197, 114, 197, 0.9);
+}
+/*
+.inputs{
+    zoom: 1.3;
+    position: absolute;
+    top: 7px;
+    left: 6px;
+
+}
+
+.inputs:checked {
+    background-color: rgba(166, 88, 167, 0.9);
+}
+li:hover{
+    background-color: rgba(13, 13, 13, .98);
+    color: white;
+    border: 5px dotted rgba(166, 88, 166, 0.9);
+}
+*/
