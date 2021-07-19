@@ -45,20 +45,21 @@ ul.addEventListener("click", function(e){                       // ul listesi ü
     const item = e.target;                                      // tıklama hedefini "item" değişkenine atadık
     if (item.className==="trash-btn"){                          // Eğer hedef çöp kutusu ise
         const todo = item.parentElement;                        // "todo" değişkenine çöp kutusunun parentını (yani oluşturulan div) atamış olduk
-        todo.classList.toggle("trushed");                       
-        todo.addEventListener("transitionend",function(){
-            todo.remove();
+        todo.classList.toggle("trushed");                       // "todo" değişkeninin classını "trushed" yaptık ( Öncesinde "trash-btn" idi), yani artık .trushed style uygulanacak                
+        todo.addEventListener("transitionend",function(){       // "transitionend" eventı bir transition tammalandığında olacak olan olayı betimler
+            todo.remove();                                      // transition işlemi tamamlandığında "todo" silinir ( yani item.parentElement)
         });
-        pending--;
-        span.innerText = pending;
+        pending--;                                              // Eee silindikten sonra haliyle pending 1 azaltılır
+        span.innerText = pending;                               // Ve güncel değeri ilgili yere tekrar yazdırılır
     };
-    if (item.className==="completed-btn"){
-        const todo = item.parentElement;
-        todo.classList.toggle("completed")
+    if (item.className==="completed-btn"){                      // tıklama hedefin "✓" butonu ise
+        const todo = item.parentElement;                        // Bunun parent elemanını (yani oluşturulan div) "todo" değişkenine atadık
+        todo.classList.toggle("completed")                      // "todo" değişkeninin classını bu sefer "completed" yaptık ( Öncesinde "completed-btn" idi), yani artık .completed style uygulanacak                
     };
 })
-clear.addEventListener("click", function(){
-    if (confirm("Are you sure?")){
-        window.location.reload();
+
+clear.addEventListener("click", function(){                     // Clear All butonuna tıklandığında
+    if (confirm("Are you sure?")){                              // Kullanıcıya confirm uyarısı (OK-CANCEL) çıkıyor, Burada OK ise yani true ( Cancel dan false gelir)
+        window.location.reload();                               // Sayfa tekrar yenileniyor
     }
 })
