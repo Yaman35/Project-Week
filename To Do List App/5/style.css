@@ -19,12 +19,18 @@
     padding-left: 2rem;
     padding-right: 2rem;
     padding-bottom: 1rem;
+    
   }
   
   h1 {
+    
     text-align: center;
     margin-bottom: 1rem;
     color: #1f08f3;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    background-color: lightblue;
   }
   
 
@@ -40,7 +46,10 @@
     font-size: 1.5rem;
     font-weight: 400;
     color: #57606f;
-    background-color: rgb(236, 231, 231);
+    background-color: rgb(129, 192, 47);
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
   }
   
   .input-body {
@@ -84,27 +93,31 @@
     border: 1px solid rgb(236, 231, 231);
     font-size: 1.5rem;
     font-weight: 600;
-    background-color: rgb(236, 231, 231);
+    background-color: rgb(129, 192, 47);
+    border-radius: 20px;
+    
   }
 
   .delete-btn {
     align-self: center;
-    background-color: #eb3b5a;
-    color: #ffff;
+    background-color: lightgreen;
+    color: #000;
     padding: 10px 1.3rem;
     border: none;
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     border-radius: 5px;
+    transition: 0.9s;
   }
   .delete-btn:hover {
-    background-color: #eb1e43;
+    background-color: red;
   }
 
   .task-list h4 {
     align-self: center;
     color: #57606f;
+    
   }
 
   /* Buradan sonrası js ile eklenen elemanlar */
@@ -116,10 +129,33 @@
     border: 1px solid rgb(134, 132, 132,0.3);
     font-size: 1.5rem;
     font-weight: 600;
-    background-color: rgb(236, 231, 231);
-    color: #2ecc71;
+    background-color:lightgreen;
+    color: black;
+    margin-top: 10px;
+    border-radius: 20px;
   }
 
+  .completed-item{                         /* li ile birlikte eklenen çöp kutusu */
+    color: black;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: bold;
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+
+  .completed-item:hover{
+    color: green;
+    transform: scale(1.2);
+  }
+
+  .checked {                  /* Buton checked edildiğinde */    
+    color: #000;
+    text-decoration: line-through;
+    text-decoration-thickness: 5px;
+    background-color: rgb(214, 205, 205);
+}
   .delete-item{                         /* li ile birlikte eklenen çöp kutusu */
     color: black;
     border: none;
@@ -127,10 +163,12 @@
     font-weight: bold;
     background-color: transparent;
     cursor: pointer;
+    transition: 0.8s;
   }
 
   .delete-item:hover{
     color: red;
+    transform: rotate(360deg);
   }
 
 
