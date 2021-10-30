@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+body {
+    background: #352f5b;
+    font-family: poppins,Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+}
+h1{
+    font-size: 50px;
+    padding: 30px 0px;
+    text-align: center;   
+}
+.container {
+    min-width: 576px;
+    margin: 0px auto;
+}
+.form-control{
+    border: none;
+    font-size: 2rem;
+    height:5rem ;
+    padding-inline-start: 40px;
+    padding-inline-end: 30px;
+    margin-top: 40px;
+    border-radius: 30px;
+    width: 90%; 
+    background-color: rgb(165, 166, 229) ;
+}
+
+.add{
+    text-align: center;
+    margin: 40px auto;    
+    max-width: 900px;    
+    min-width: 576px;
+}
+.fa-clipboard-check {
+    padding-left: 20px;
+}
+.fa-trash-alt{
+    padding-right: 20px;
+}
+.fa-clipboard-list{
+    padding-left: 20px;
+}
+.list-item:hover{
+    background-color: #959de2;
+}
+
+.list-item{
+    background: #EFE526;
+    height: 4rem;    
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;    
+    min-width: 576px; 
+    margin: 0px auto;
+    border: 2px solid #352f5b;
+    border-radius: 20px;
+}
+
+.delete,
+.complete,
+.clearall {
+    cursor: pointer;
+}
+.todolist{
+    padding-left: 0;
+}
+
+.footer,
+.ial{   
+    padding: 40px;   
+    color: #ffffff;
+    text-align: center;
+    border-top: 3px solid #EFE526;
+    font-size: 15px;
+}
+.clearall{
+    height: 4rem;    
+    color: #352f5b;
+    background-color: #EFE526;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin: 30px auto;
+    font-size: 1.5rem;
+    border-radius: 30px;
+}

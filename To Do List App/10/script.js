@@ -41,10 +41,7 @@ addButton.addEventListener("click", function () {       // Add Tash butonuna bas
         tasks.style.cursor = "pointer";                 // Kullanıcı üzerine gelidğinde mouse işaretini değiştirdik
         //input.value = ""
         
-        const trashbin = document.createElement("i");   // Bir adet icon oluşturduk ve bunu "trashbin" değişkenine atadık
-        trashbin.setAttribute("class", "fas fa-trash"); // Bu iconun classını "fas fa-trash" yaparak çöp kutusu iconu haline getirdik
-        trashbin.style.marginRight = "2%";              // Sağ taraftan mesafesini ayarladık 
-        trashbin.style.fontSize = "1.5rem"              // Yine aynı şekilde boyutunu ayarladık 
+        f
 
         // Şimdi bütün bu yukarıda oluşturduğumuz elemanları şu anda içi boş olan section2 ye child olarak ekliyoruz
 
@@ -67,6 +64,8 @@ addButton.addEventListener("click", function () {       // Add Tash butonuna bas
             const confirmation = confirm("Do you want to delete this task?"); // Kullanıcıya bir confirmation uyarısı çıkar
             confirmation ? div.remove() : null;         // Eğer OK(true) ise ilgili div silinir, aksi takdirde birşey yapmaz
         })
+
+        
 
     }
 })
